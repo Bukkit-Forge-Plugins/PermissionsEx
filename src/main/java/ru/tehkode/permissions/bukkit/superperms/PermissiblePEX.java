@@ -45,8 +45,8 @@ public class PermissiblePEX extends PermissibleBase {
 			new ServerNamePermissibleInjector("net.glowstone.entity.GlowHumanEntity", "permissions", true, "Glowstone"),
 			new ServerNamePermissibleInjector("org.getspout.server.entity.SpoutHumanEntity", "permissions", true, "Spout"),
 			new ClassNameRegexPermissibleInjector("org.getspout.spout.player.SpoutCraftPlayer", "perm", false, "Spout"),
-			new ServerNamePermissibleInjector(getCBClassName("entity.CraftHumanEntity"), "perm", true, "CraftBukkit"),
-			new ServerNamePermissibleInjector(getCBClassName("entity.CraftHumanEntity"), "perm", true, "CraftBukkit++")
+			new ServerNamePermissibleInjector(getCBClassName("entity.BukkitEntityHuman"), "perm", true, "BukkitForge"),
+			new ServerNamePermissibleInjector(getCBClassName("entity.BukkitHumanEntity"), "perm", true, "CraftBukkit++")
 	};
 	protected Player player = null;
 	protected boolean strictMode = false;
